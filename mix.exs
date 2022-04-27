@@ -2,7 +2,7 @@ defmodule Oban.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/sorentwo/oban"
-  @version "2.12.0-dev"
+  @version "2.12.0"
 
   def project do
     [
@@ -72,6 +72,7 @@ defmodule Oban.MixProject do
       "guides/upgrading/v2.0.md",
       "guides/upgrading/v2.6.md",
       "guides/upgrading/v2.11.md",
+      "guides/upgrading/v2.12.md",
 
       # Recipes
       "guides/recipes/recursive-jobs.md",
@@ -151,7 +152,8 @@ defmodule Oban.MixProject do
       {:benchee, "~> 1.0", only: [:test, :dev], runtime: false},
       {:credo, "~> 1.6", only: [:test, :dev], runtime: false},
       {:dialyxir, "~> 1.0", only: [:test, :dev], runtime: false},
-      {:ex_doc, "~> 0.28", only: [:test, :dev], runtime: false}
+      {:ex_doc, "~> 0.28", only: [:test, :dev], runtime: false},
+      {:makeup_diff, "~> 0.1", only: [:test, :dev], runtime: false}
     ]
   end
 
